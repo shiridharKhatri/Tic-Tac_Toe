@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Caveat&family=Concert+One&family=Dancing+Script&family=DynaPuff:wght@400;500&family=Lexend:wght@500&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Qwitcher+Grypen&family=Roboto:ital,wght@1,100&family=Silkscreen&family=Varela+Round&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("background2.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.container {
+  background-color: aliceblue;
+  height: 500px;
+  width: 420px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 25px black;
+  position: relative;
+  left: 50%;
+  top: 103px;
+  border-radius: 10px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -40px;
+}
+.card td {
+  height: 120px;
+  width: 120px;
+  font-size: 60px;
+  background-color: #222d44;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.btn button {
+  height: 50px;
+  width: 180px;
+  position: relative;
+  top: 420px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn #btn1 {
+  background-color: #4a9e3c;
+}
+.btn #btn2 {
+  background-color: #cf1827;
+}
+.btn button:hover {
+  height: 45px;
+  width: 175px;
+}
+h1 {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left: 60px;
+  top: 85px;
+  width: 450px;
+  height: 500px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 25px black;
+}
+p{
+    padding: 0px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+    font-size: 25px;
+    font-family: 'Silkscreen', cursive;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 20px;
+    position: relative;
+    top: 100px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+}
+h2{
+  background-color: #114542;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width:420px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 35px;
+  text-align: center;
+  border-radius: 10px;
+}
+h2 span{
+  font-family: 'Silkscreen', cursive;
+  position: relative;
+  top: 10px;
+  font-size: 30px;
+}
+@media (max-width: 480px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("mobile.jpg");
+  }
+  .container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 440px;
+  }
+  .card td {
+    width: 100px;
+    height: 100px;
+    color: black;
+  }
+  .btn button {
+    top: 360px;
+    width: 154px;
+  }
+  .btn button:hover {
+    height: 45px;
+    width: 160px;
+  }
+  h1{
+    display: none;;
+  }
+  h2{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    background-color: #4c344c;
+  }
+  .card td{
+    background-color: #a35868;
+  }
+}
